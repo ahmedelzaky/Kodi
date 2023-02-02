@@ -1,0 +1,128 @@
+/* start global varibles */
+
+:root {
+  --dark-blue-color: #19283f;
+  --light-blue-color: #a8b9c0;
+  --light-green-color: #31beba;
+  --section-color: #eff7fa;
+  --yellow-color: #ffc501;
+  --red-color: #ff3150;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.active {
+  color: var(--light-green-color);
+}
+/* end global varibles */
+
+/* start nav bar */
+
+.navbar {
+  background-color: var(--dark-blue-color);
+}
+.navbar-toggler {
+  color: white;
+  font-size: 2rem;
+}
+.nav-link {
+  color: var(--light-blue-color);
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: var(--light-green-color);
+}
+.navbar .serch {
+  border-left: 1px solid var(--light-green-color);
+}
+.navbar .serch-icon {
+  color: var(--light-green-color);
+}
+.main-btn {
+  background-color: #ff3150;
+  color: var(--yellow-color);
+  border: none;
+}
+/* end navbar */
+
+/* start  landing*/
+.landing {
+  background-color: var(--dark-blue-color);
+  min-height: calc(100vh - 70px);
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  background-color: var(--light-green-color);
+  width: 150px;
+  height: 1px;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+/* end  landing*/
+
+/* start Featuers */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  font-size: 3rem;
+  color: var(--light-green-color);
+}
+.features h4 {
+  color: var(--yellow-color);
+}
+/* end Featuers */
+
+/* start our-work */
+
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  border-radius: 10px;
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #33d1ccad;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 25px;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+  transform: translateX(0);
+
+}
+/* end our-work */
