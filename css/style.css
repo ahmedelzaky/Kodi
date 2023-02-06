@@ -124,25 +124,84 @@ body {
   font-size: 25px;
   transform: translateX(calc(-100% - 5px));
 }
-.our-work .box:hover::before{
+.our-work .box:hover::before {
   transform: translateX(0);
-
 }
 /* end our-work */
-.description{
+.description {
   max-width: 500px;
 }
 
 /* start team */
-.our-team{
-  background-color: var(--section-color)
+.our-team {
+  background-color: var(--section-color);
 }
-.our-team .text h2{
+.our-team .text h2 {
   color: var(--yellow-color);
 }
-.our-team h4{
+.our-team h4 {
   padding: 10px;
   background-color: #31beba;
   color: white;
 }
 /* end team */
+
+.project {
+  background-color: var(--dark-blue-color);
+}
+/* start subscripe */
+.subscripe {
+  background-color: var(--yellow-color);
+}
+
+.subscripe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.subscripe input[type="text"]:focus {
+  outline: none;
+}
+.subscripe ::placeholder {
+  color: white;
+}
+.subscripe input[type="submit"] {
+  background-color: var(--dark-blue-color);
+  color: var(--yellow-color);
+}
+/* end subscripe */
+/* start footer */
+.footer {
+  background-color: var(--dark-blue-color);
+}
+.footer span {
+  color: var(--yellow-color);
+}
+.footer .copyright > span {
+  color: var(--light-green-color);
+}
+.footer svg {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+}
+.footer .facebook {
+  color: #1877f2;
+  background-color: #eff7fa;
+  border: none;
+}
+.footer .twitter {
+  background-color: #1877f2;
+  color: #eff7fa;
+  border-radius: 50%;
+}
+.footer .linkedin {
+  color: #1da1f2;
+  background-color: white;
+  border-radius: 0;
+}
+.footer .youtube {
+  color: #ff0000;
+}
+/* end footer */
